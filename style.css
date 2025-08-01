@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #d9b0fc;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to bottom, #a18cd1, #fbc2eb);
+  padding: 1em 2em;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav h2 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Base style for all nav links */
+nav a {
+  position: relative;
+  padding-bottom: 0.3em;
+  transition: color 0.3s ease;
+}
+
+/* Underline effect using pseudo-element */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+/* Home = White underline */
+.nav-home:hover::after {
+  width: 100%;
+  background-color: white;
+}
+
+/* Stories = Red underline */
+.nav-stories:hover::after {
+  width: 100%;
+  background-color: #eb2ca1;
+}
+
+/* Self-care = Blue underline */
+.nav-selfcare:hover::after {
+  width: 100%;
+  background-color: #3498db;
+}
+
+/* Tips = Green underline */
+.nav-tips:hover::after {
+  width: 100%;
+  background-color: #fcd849;
+}
+
+/* Optional: Chat = Purple underline */
+.nav-chat:hover::after {
+  width: 100%;
+  background-color: #b33bf5;
+}
+
+
+main {
+  padding: 5em;
+}
+
+.welcome {
+  background: linear-gradient(to top, #ffbcf6, #f6d8ff);
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.welcome-content h2 {
+  font-size: 3rem;
+  color: #1e3a5f;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 0.5rem;
+}
+
+/* Make welcome text more centered and narrower */
+.welcome-content p {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Grid layout for the 3 sections */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  max-width: 1200px;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #4a90e2;
+  margin: 2rem 0 1rem;
+}
+
+.daily-tip {
+  background-color: #f2ead5;
+  padding: 1.2em;
+  border-left: 5px solid #fcd849;
+  border-radius: 8px;
+}
+
+.daily-story {
+  background-color: #fff4f4;
+  padding: 1.2em;
+  border-left: 5px solid #eb2ca1;
+  border-radius: 8px;
+  margin-top: 2em;
+}
+
+.self-care {
+  margin-top: 3em;
+  background-color: #f3fafe;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.self-care h2 {
+  font-size: 2rem;
+  color: #2c6f91;
+  margin-bottom: 0.5em;
+}
+
+.self-care h3 {
+  margin-top: 1.5em;
+  color: #4a90e2;
+  font-size: 1.3rem;
+}
+
+.self-care p {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
+
+.self-care-tips {
+  list-style-type: "🌱 ";
+  padding-left: 1.2em;
+}
+
+.self-care-tips li {
+  margin-bottom: 0.6em;
+  font-size: 1rem;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 3em;
+  margin-top: 3em;
+background: linear-gradient(to bottom, #fbc2eb, #a18cd1);
+
+  color: white;
+}
+
+/* Grid Layout */
+
+.grid-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* AI Assistant */
+.ai-assistant {
+  margin: 3rem 2rem;
+  padding: 2rem;
+  background-color: #dff9fb;
+  border-left: 8px solid #4a90e2;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.ai-assistant h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.ai-assistant p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ai-assistant button {
+  padding: 0.8rem 1.5rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ai-assistant button:hover {
+  background-color: #2f80ed;
+}
+
+
+/* Make header/menu stack on smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 1em;
+  }
+
+  .welcome-content h2 {
+    font-size: 2rem;
+  }
+
+  .welcome-content p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+}
+
+
+/* Media Queries */
+@media (max-width: 10204px) {
+  .grid-item {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .welcome-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .ai-assistant {
+    margin: 2rem 1rem;
+  }
+}
