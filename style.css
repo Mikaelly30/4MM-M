@@ -71,6 +71,12 @@ nav a::after {
   background-color: white;
 }
 
+/* About us = Green underline */
+.nav-about:hover::after {
+  width: 100%;
+  background-color: #4ccf32;
+}
+
 /* Stories = Red underline */
 .nav-stories:hover::after {
   width: 100%;
@@ -120,6 +126,24 @@ main {
   padding: 0 1rem;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px; /* Optional rounded corners */
+}
+
 /* Grid layout for the 3 sections */
 .grid-container {
   display: grid;
@@ -142,6 +166,7 @@ main {
   padding: 1.2em;
   border-left: 5px solid #fcd849;
   border-radius: 8px;
+  height: 200px
 }
 
 .daily-story {
@@ -149,13 +174,15 @@ main {
   padding: 1.2em;
   border-left: 5px solid #eb2ca1;
   border-radius: 8px;
-  margin-top: 2em;
+  margin-top: 0.01em;
+  height: 200px
 }
 
 .self-care {
-  margin-top: 3em;
+  margin-top: 0.01em;
   background-color: #f3fafe;
   padding: 2em;
+  border-left: 5px solid #3498db;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -290,3 +317,4 @@ background: linear-gradient(to bottom, #fbc2eb, #a18cd1);
     margin: 2rem 1rem;
   }
 }
+
