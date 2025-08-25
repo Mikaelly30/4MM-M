@@ -101,6 +101,9 @@ nav a::after {
   background-color: #b33bf5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 main {
   padding: 5em;
