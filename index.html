@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>4MMM</title>
+  <title>4MyMind&Me</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -24,19 +24,19 @@
       <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap" rel="stylesheet">
 
       <ul>
-        <li><a href="#" class="nav-home">Home🤍</a></li>
-        <li><a href="#" class="nav-about">About us💚</a></li>
-        <li><a href="#" class="nav-tips">Tips💛</a></li>
-        <li><a href="#" class="nav-stories">Stories💖</a></li>
-        <li><a href="#" class="nav-selfcare">Self-care💙</a></li>
-        <li><a href="#" class="nav-chat">Chat💜</a></li>
+        <li><a href="home" class="nav-home">Home🤍</a></li>
+        <li><a href="#about_us" class="nav-about">About us💚</a></li>
+        <li><a href="#tips" class="nav-tips">Tips💛</a></li>
+        <li><a href="#stories" class="nav-stories">Stories💖</a></li>
+        <li><a href="#selfcare" class="nav-selfcare">Self-care💙</a></li>
+        <li><a href="#assistant" class="nav-chat">Chat💜</a></li>
         
         
       </ul>
     </nav>
   </header>
 
-  <section class="welcome">
+  <section id="about_us" class="welcome">
     <div class="welcome-content">
       <h2>💜Welcome to For My Mind & Me!💜</h2>
       <p>Feeling like you're out on your own? Don't fool yourself! 'Cause you’re NOT. This is a safe space for everyone to explore mental health, learn, and take care of themselves — one step at a time now, and always. 🫂 </p>
@@ -54,48 +54,55 @@
     
   </section>
   
-  <main>
-    <!-- here -->
+<main>
+  <!-- Home Section -->
+  <section id="home">
     <h2 class="section-heading">Your Daily Boost ✨</h2>
 
     <div class="grid-container">
-      <section class="daily-tip grid-item">
+      <!-- Daily Tip -->
+      <section id="tips" class="daily-tip grid-item">
         <h3>🧠 Daily Mental Health Tip</h3>
-        <p id="tip">Loading tip...</p> 
+        <p id="tip">Loading tip...</p>
       </section>
 
-      <section class="daily-story grid-item">
+      <!-- Daily Story -->
+      <section id="stories" class="daily-story grid-item">
         <h3>📘 Daily Story</h3>
         <p id="story">Loading story...</p>
       </section>
 
-      <section class="self-care grid-item">
-        <h2>🧘‍♀️ What Is Self-Care?</h2>
-        <p>Self-care means taking time to care for your mental, emotional, and physical health...</p>
-        
+      <!-- Self-Care -->
+      <section id="selfcare" class="self-care grid-item">
+        <h2>🧘 What Is Self-Care?</h2>
+        <p>
+          Self-care means taking time to care for your mental, emotional, 
+          and physical health...
+        </p>
+
         <h3>✨ Daily Self-Care Tips</h3>
         <ul class="self-care-tips">
           <li id="selfCareTip">Loading story...</li>
         </ul>
       </section>
-   </div>     
-    
-    
-    <section class="ai-assistant">
-      <h3>🤖 Mental Health AI Assistant</h3>
-      <p>Have a question? Need support? Our AI assistant is here to help you navigate stress, anxiety, and more — anytime you need it.</p>
-      <button>Talk to the Assistant</button>
-    </section>
-        
-  </main>
+    </div>
+  </section>
+
+  <!-- AI Assistant Section -->
+  <section id="assistant" class="ai-assistant">
+    <h3>🤖 Mental Health AI Assistant</h3>
+    <p>
+      Have a question? Need support? Our AI assistant is here to help you 
+      navigate stress, anxiety, and more — anytime you need it.
+    </p>
+  </section>
+</main>
+
 
   <footer>
     <p>&copy; 2025 4MyMind&Me - Created by Mikaelly</p>
   </footer>
 
-  <script src="script.js"></script>
-</body>
-</html>
 <!-- partial -->
   <script  src="./script.js"></script>
 
